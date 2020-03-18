@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Plus Petit ou Plus Grand</title>
+		<link rel="stylesheet" href="../css/reset.css">
+		<link rel="stylesheet" href="../css/style.css">
+	</head>
+	<body>
+		<header>
+			<p>Higher or Lower Game</p>
+		</header>
+		<div id="boxgame">
+			<h1>Guess The Number</h1>
+
+			<div id="game">
+				<h2 id="consigne"></h2>
+
+				<div>
+					<p>Vie</p>
+					<input id="player-tries">
+				</div>
+				<p id="nbr-vie"></p>
+				<div id="player-interface">
+					<div>
+						<p>Min</p>
+						<input id="player-min">
+					</div>
+					<input id='player-number'>
+					<div>
+						<p>Max</p>
+						<input id="player-max">
+					</div>
+				</div>
+				<button id="button-minmax" class="button"><span>Appliquer Min & Max</span></button>
+				<div id="submit-number-box">
+					<button id="submit-number" class="button"><span>Play</span></button>
+				</div>
+
+			</div>
+			<div id="message-div">
+				<p class="message-text"></p>
+				<button id="replay"><span>Replay</span></button>
+			</div>
+		</div>
+		<script src="../js/jeu.js"></script>
+	</body>
+</html>

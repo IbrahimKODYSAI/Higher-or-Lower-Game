@@ -1,0 +1,256 @@
+
+body{
+  text-align: center;
+}
+header{
+  height: 5em;
+  background-color: #202020 ;
+}
+
+header p {
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+  line-height: 2.5;
+}
+h1{
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: bold;
+  margin: 1em;
+}
+h2{
+  margin: 1em auto;
+}
+#nbr-vie{
+  margin: 1em;
+}
+#player-tries{
+  display: block;
+  margin: auto;
+  text-align: center;
+  border: none;
+  width: 2em;
+  font-size: 2em;
+  color: white;
+  background-color:#202020 ;
+  margin: 0.5em auto 1em auto;   
+}
+#player-interface{
+  display: flex;
+  width: 30em;
+  margin: auto;
+}
+#player-min, #player-max{
+  border-radius: 15px;
+  display: inline-block;
+  margin: 0.2em auto;
+  text-align: center;
+  border: none;
+  width: 3em;
+  font-size: 2em;
+  color: white;
+  background-color:#202020 ;
+}
+#player-number{
+  display: inline-block;
+  margin: auto;
+  text-align: center;
+  border: none;
+  width: 2em;
+  font-size: 5em;
+  color: white;
+  background-color:#202020 ;
+  margin: auto; 
+}
+#submit-number{
+  display: block;
+  background: -webkit-gradient(to right,#a2ccb6 0%,#fceeb5 50%,#ee786e 100%);
+  background: linear-gradient(to right,#a2ccb6 0%,#fceeb5 50%,#ee786e  100%);
+  background-size: 500%;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  outline: none;
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+  padding: 0.5em;
+  width: 4em;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 1em auto;
+}
+
+#submit-number span{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#submit-number span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5;
+}
+#submit-number:hover span{
+  padding-right: 25px;
+}
+
+#submit-number:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.error-message{
+  cursor: pointer;
+  background: -webkit-gradient(to left,#dd1818 0%,#fceeb5 50%,#ee786e 100%);
+  background: linear-gradient(to left,#dd1818 0%,#fceeb5 50%,#ee786e  100%);
+  background-size: 500%;
+  border-radius: 15px;
+  margin: auto;
+  width: 36em;
+  height: 5em;
+  line-height: 4em;
+  padding: 0.5em;
+  transition: line-height 0.5s;
+}
+.d-submit{
+  display: none;
+}
+.message-text{
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: auto;
+}
+
+.higher-text{
+  background: -webkit-gradient(to right,#64f38c 0%,#f79d00 50%,#64f38c 100%);
+  background: linear-gradient(to right,#64f38c 0%,#f79d00 50%,#64f38c  100%);
+  background-size: 500%;
+}
+.lower-text{
+  color: white;
+  background: -webkit-gradient(to right,#2196f3 0%,#fdbb2d 50%,#f44336 100%);
+  background: linear-gradient(to right,#2196f3 0%,#fdbb2d 50%,#f44336 100%);
+  background-size: 500%;
+}
+
+.higher-text, .lower-text{
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  margin: auto;
+  border-radius: 15px;
+  font-size: 1.2em;
+  padding: 1.2em;
+  transition: all 0.5s;
+}
+
+.lose{
+  position: relative;
+  color: white;
+  cursor: pointer;
+  background: -webkit-gradient(to right,#f81717 0%,#fdbb2d 50%,#f44336 100%);
+  background: linear-gradient(to right,#f81717 0%,#fdbb2d 50%,#f44336 100%);
+  background-size: 500%;
+  border-radius: 15px;
+  margin: auto;
+  width: 30em;
+  height: 20em;
+  line-height: 1.5em;
+  padding: 0.5em;
+  transition: all 0.5s;
+}
+.lose p {
+  margin-top: 4em;
+}
+.win{
+  position: relative;
+  color: white;
+  cursor: pointer;
+  background: -webkit-gradient(to right,#f81717 0%,#fdbb2d 50%,#f44336 100%);
+  background: linear-gradient(to right,#f81717 0%,#fdbb2d 50%,#f44336 100%);
+  background-size: 500%;
+  border-radius: 15px;
+  margin: auto;
+  width: 30em;
+  height: 20em;
+  line-height: 12em;
+  padding: 0.5em;
+  transition: all 0.5s;
+}
+#submit-number:hover, .nan-or-empty:hover, .higher:hover, .lower:hover, .lose:hover, .win:hover, .replay-ok:hover, #replay:hover, #button-minmax:hover{
+  animation-name: gradient;
+  -webkit-animation-name: gradient;
+  animation-duration: 2s;
+  -webkit-animation-duration: s;
+  animation-iteration-count: 1;
+  -webkit-animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+@keyframes gradient {
+
+  0% {background-position: 0% 50%; }
+  100% {background-position: 100%; }
+}
+.end-game{
+  display: none;
+}
+
+.replay-none{
+  display: none;
+}
+.submit-none{
+  display: none;
+}
+#button-minmax{
+  color: white;
+  text-align: center;
+  margin: 1em auto;
+  padding: 0.7em;
+  font-size: 0.9em;
+  background: -webkit-gradient(to right,#240b36 0%,#c31432 50%,#4286f4 100%);
+  background: linear-gradient(to right,#240b36 0%,#c31432 50%,#4286f4 100%);
+  background-size: 500%;
+  border-radius: 8px;
+}
+#replay{
+  color: white;
+  display: block;
+  background: -webkit-gradient(to right,#240b36 0%,#c31432 50%,#4286f4 100%);
+  background: linear-gradient(to right,#240b36 0%,#c31432 50%,#4286f4 100%);
+  background-size: 500%;
+  border-radius: 50%;
+  border: none;
+  text-align: center;
+  padding: 0.5em;
+  margin: 1em auto;
+  height: 4.2em;
+  width: 4.2em;
+  transition: all 0.5s;
+}
+.replay-ok{
+  color: white;
+  position: absolute;
+  display: block;
+  top: 12em;
+  left: 15em;
+  background: -webkit-gradient(to right,#240b36 0%,#c31432 50%,#4286f4 100%);
+  background: linear-gradient(to right,#240b36 0%,#c31432 50%,#4286f4 100%);
+  background-size: 500%;
+  border-radius: 8px;
+  border: none;
+  text-align: center;
+  padding: 0.5em;
+  height: 4em;
+  width: 6em;
+  transition: all 0.5s;
+}
