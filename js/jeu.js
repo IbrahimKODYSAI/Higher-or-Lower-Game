@@ -2,14 +2,14 @@ const datas = {
   petit : [
     "rooh...Allé c'est encore plus petit ",
     "Non c'est encore plus petit, mais dis t'es pas très doué non 🤔? ",
-    "Mais Non puré le chiffre est plus petit !! tes vraiment naze 😂",
-    "NON c'est encore plus petit ! MDR c'est pas mieux t'arrête dès maitenant ?😂😭... ",
+    "Mais Non ! le chiffre est plus petit !!",
+    "NON c'est encore plus petit ! il vaudrai mieux arrêter dès maitenant non ?😂😭... ",
   ],
   grand : [
   "Le chiffre est encore plus Grand ! Allé du nerf tu peux le faire 😉 ",
-  "NON NON ET NON C'est plus GRAND PTIN 🤬 ",
-  "MDRRRR comment j'ai trop envie de te frapper 🙂.... Vazy le chiffre est plus grand",
-  "C'est encore plus grand mais vazy tes trop naze stp arrête maientant quitte mon site 🙄",
+  "NON NON ET NON C'est plus GRAND 🤬 ",
+  "....le chiffre est plus grand",
+  "C'est encore plus grand mais apres tant d'echec je voudrai que tu quitte mon site 🙄",
   ]
 }
 
