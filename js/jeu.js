@@ -1,14 +1,14 @@
 const datas = {
   petit : [
     "rooh...Allé c'est encore plus petit ",
-    "Non c'est encore plus petit, mais dis t'es pas très doué non 🤔? ",
+    "Non c'est encore plus petit, mais dis moit'es pas très doué non 🤔? ",
     "Mais Non ! le chiffre est plus petit !!",
     "NON c'est encore plus petit ! il vaudrai mieux arrêter dès maitenant non ?😂😭... ",
   ],
   grand : [
   "Le chiffre est encore plus Grand ! Allé du nerf tu peux le faire 😉 ",
   "NON NON ET NON C'est plus GRAND 🤬 ",
-  "....le chiffre est plus grand",
+  "....Le chiffre est plus grand, j'ai envie de te frapper",
   "C'est encore plus grand mais apres tant d'echec je voudrai que tu quitte mon site 🙄",
   ]
 }
@@ -67,13 +67,13 @@ const app = {
         app.messageDiv.className = 'lose';
         app.replay.className = 'replay-ok';
         app.message.classList.remove('lower-text', 'higher-text', 'error-message')
-        app.message.textContent ='Miskine tu es trop nul(le) 😂😭 tu as épuisé toute tes chances le chiffre etait ' + app.nbrAlea + ' barre toi mtn 😒';
+        app.message.textContent ='Miskine tu es trop nul(le) 😂😭 tu as épuisé(e) toute tes chances le chiffre etait ' + app.nbrAlea + ' barre toi mtn 😒';
       } else {
         app.game.className ='end-game';
         app.messageDiv.className = 'win';
         app.replay.className = 'replay-ok';
         app.message.classList.remove('lower-text', 'higher-text', 'error-message')
-        app.message.textContent ='bravo le nombre etait bien ' + app.nbrAlea +' ! 😎';     
+        app.message.textContent ='Bravo le nombre etait bien ' + app.nbrAlea +' ! 😎';     
       }
     }
     
@@ -103,7 +103,7 @@ const app = {
       if(app.playerMin.value > app.playerMax.value){
         app.message.className = 'error-message';
         app.submitBox.className = 'submit-none';
-        app.message.textContent = `Ta valeur minimum est superieur à ta valeur Max apart ca tout va bien😐.`;
+        app.message.textContent = `Ta valeur minimum est superieur à ta valeur Max à part ca tout va bien😐.`;
       }else if( app.playerMin.value < app.playerMax.value && app.playerMin.value == 0){
         app.message.className = 'error-message';
         app.submitBox.className = 'submit-none';
